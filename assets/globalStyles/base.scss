@@ -1,0 +1,254 @@
+.ss-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+p > img {
+  display: inline;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 1.6rem;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+
+.rt-float-left {
+  float: left;
+  max-width: 38.4rem;
+  margin: 1.6rem 3.2rem 1.6rem 0;
+  height:auto;
+}
+
+.rt-float-right {
+  float: right;
+  max-width: 38.4rem;
+  margin: 1.6rem 0 1.6rem 3.2rem;
+  height:auto;
+}
+
+.tns-outer {
+  position: relative;
+
+  .tns-inner {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.tns-controls {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  i.material-icons {
+    color: #fff;
+    font-size: 8rem;
+  }
+}
+
+.breadcrumbs {
+
+  li, li>a {
+    color: $osa-blue;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $headlineFont;
+    display: flex;
+    align-items:center;
+  }
+
+  li:not(:last-child) {
+    &:after {
+      @include material-icons-pseudo;
+      content: 'keyboard_arrow_right';
+      color: $osa-yellow;
+      font-size: 1.6rem;     
+    }
+  }
+}
+
+.rich-text {
+  padding: 3.2rem 0;
+}
+
+.column-login,
+.contact-form {
+  padding-bottom: 4rem;
+  input,
+  textarea {
+    height: 4rem;
+    border-radius: .4rem;
+    padding: .4rem .8rem;
+    width: 100%; 
+    border: 1px solid #ccc;
+    margin-bottom: 1.6rem;
+  }
+
+  textarea {
+    min-height: 16rem;
+  }
+
+  input.button {
+    width: auto;
+    background-color: $osa-blue;
+    color: #fff;
+    border-color: $osa-blue;
+    padding: .4rem 1.2rem;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 2px;
+    font-family: $headlineFont;
+    transition: $transition-universal;
+    font-size: 1.4rem;
+    letter-spacing: .5px;
+    font-weight: 700;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #fff;
+      color: $osa-blue;
+    }
+  }
+
+  label span,
+  .editor-label{
+    color: #182241;
+    font-weight: bold;
+    padding-bottom: 1.6rem;
+  }
+
+  .input-wrapper input {
+    border: 0;
+  }
+
+  .button--yellow {
+    background-color: $osa-yellow;
+    color: #fff;
+    border-color: $osa-yellow;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #fff;
+      color: $osa-blue;
+    }
+  }
+
+  .button--form {
+    border-radius: 0;
+    min-width: 24rem;
+    margin: .8rem;
+    text-align: center;
+  }
+}
+
+.searchFiltersActive__clearButtonWrapper button{
+  padding-left: .8rem;
+  width: auto;
+  color: $osa-blue;
+  background-color: #fff;
+  border-color: $osa-blue;
+  padding: .4rem 1.2rem;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  font-family: $headlineFont;
+  transition: $transition-universal;
+  font-size: 1.2rem;
+  letter-spacing: .5px;
+  font-weight: 700;
+  border-radius: 50px;
+  display: inline-flex;
+  margin: .4rem 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+    background-color: $osa-blue;
+  }
+}
+
+.searchFiltersActive__label {
+  padding-right: .8rem;
+}
+
+.searchFiltersActive__tagList {
+  padding-left: 0;
+  list-style: none;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .searchFiltersActive__tagItem {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $osa-blue;
+    color: #fff;
+    padding: .4rem 1.2rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    margin: .4rem 0;
+    cursor:pointer;
+
+    &:after {
+      margin-left: .8rem;
+      content: "\00D7";
+      color: #fff;
+    }
+  }
+}
+
+.login-link {
+  padding-right: .8rem;
+  @media(max-width: $breakpoint-max-1279) {
+    color: #fff;
+    margin-bottom: 1.2rem;
+  }
+  + .button.button--blue {
+    margin-right: .8rem;
+
+    @media(max-width: $breakpoint-max-1279) {
+      margin-bottom: 1.2rem;
+      color: $osa-blue;
+      background-color: #fff;
+      border-color: #fff;
+    }
+  }
+}
+
+form[action="/ChangePassword"] {
+  label {
+    input {
+      display: block;
+      width: 30%;
+
+      @media(max-width: $breakpoint-max-1023) {
+        width: 100%;
+      }
+    }
+  }
+
+ }

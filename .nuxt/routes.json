@@ -1,0 +1,51 @@
+[
+  {
+    "name": "account",
+    "path": "/account",
+    "component": "/Users/karimlounes/Brightfind-Projects/OSA-9-2021/API-OSA-kl/pages/account.vue",
+    "chunkName": "pages/account",
+    "_name": "_3522283d"
+  },
+  {
+    "name": "additional",
+    "path": "/additional",
+    "component": "/Users/karimlounes/Brightfind-Projects/OSA-9-2021/API-OSA-kl/pages/additional.vue",
+    "chunkName": "pages/additional",
+    "_name": "_4242db72"
+  },
+  {
+    "name": "form",
+    "path": "/form",
+    "component": "/Users/karimlounes/Brightfind-Projects/OSA-9-2021/API-OSA-kl/pages/form.vue",
+    "chunkName": "pages/form",
+    "_name": "_73761338"
+  },
+  {
+    "name": "resource",
+    "path": "/resource",
+    "component": "/Users/karimlounes/Brightfind-Projects/OSA-9-2021/API-OSA-kl/pages/resource.vue",
+    "chunkName": "pages/resource",
+    "_name": "_19cc34ae"
+  },
+  {
+    "name": "safety",
+    "path": "/safety",
+    "component": "/Users/karimlounes/Brightfind-Projects/OSA-9-2021/API-OSA-kl/pages/safety.vue",
+    "chunkName": "pages/safety",
+    "_name": "_f2c9a11c"
+  },
+  {
+    "name": "search",
+    "path": "/search",
+    "component": "/Users/karimlounes/Brightfind-Projects/OSA-9-2021/API-OSA-kl/pages/search.vue",
+    "chunkName": "pages/search",
+    "_name": "_62061b48"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/karimlounes/Brightfind-Projects/OSA-9-2021/API-OSA-kl/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_68fa0a62"
+  }
+]

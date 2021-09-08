@@ -1,0 +1,63 @@
+$breakpoint-max-320: 320px;
+$breakpoint-min-321: 321px;
+$breakpoint-max-480: 480px;
+$breakpoint-min-481: 481px;
+$breakpoint-max-767: 767px;
+$breakpoint-min-768: 768px;
+$breakpoint-max-1023: 1023px;
+$breakpoint-min-1024: 1024px;
+$breakpoint-max-1279: 1279px;
+$breakpoint-min-1280: 1280px;
+$breakpoint-max-1439: 1439px;
+$breakpoint-min-1440: 1440px;
+$breakpoint-max-1599:1599px;
+$breakpoint-min-1600:1600px;
+$breakpoint-max-1919: 1919px;
+$breakpoint-min-1920: 1920px;
+
+$moore-orange: #CD482A;
+$moore-teal: #366e7c;
+$osa-blue: #182241;
+$osa-blue-2: #253666;
+$osa-yellow: #F7B361;
+
+$headlineFont: 'Montserrat', sans-serif;
+$bodyFont: "Open Sans", Helvetica, Arial, sans-serif;
+
+$transition-universal: all .3s ease;
+
+$base-font-size: 2rem;
+// H1 Responsive Sizes
+$h1-size: 4.4rem;
+// H2 Responsive Sizes
+$h2-size: 3.6rem;
+// H3 Responsive Sizes
+$h3-size: 2.4rem;
+// H4 Responsive Sizes
+$h4-size: 1.8rem;
+// H5 Responsive Sizes
+$h5-size: 1.4rem;
+// H6 Responsive Sizes
+$h6-size: 1.2rem;
+
+@mixin material-icons-pseudo {
+  direction: ltr;
+  display: inline-block;
+  font-family: 'Material Icons';
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}

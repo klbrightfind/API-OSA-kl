@@ -1,0 +1,17 @@
+#top {
+  width: auto;
+}
+
+.e-richtext,
+.e-richtext p,
+.e-richtext strong {
+font-size: 11px
+}
+
+.e-richtext h1 {
+font-size:20px;
+}
+
+.e-richtext h2 {
+font-size:13px;
+}

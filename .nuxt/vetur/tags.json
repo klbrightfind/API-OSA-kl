@@ -1,0 +1,11 @@
+{
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Hero": {
+    "description": "Auto imported from components/Hero.vue"
+  },
+  "Nav": {
+    "description": "Auto imported from components/Nav.vue"
+  }
+}

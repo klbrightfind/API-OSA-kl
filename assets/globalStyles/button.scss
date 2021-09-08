@@ -1,0 +1,120 @@
+.button {
+	display: inline-block;
+	padding: 1.2rem 2.4rem;
+  text-decoration: none;
+	border-style: solid;
+  border-width: 2px;
+	font-family: $headlineFont;
+  transition: $transition-universal;
+  font-size: 1.4rem;
+  letter-spacing: .5px;
+  font-weight: 700;
+  border-radius: 6px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+  }
+
+  &--ghost-white {
+    color: #fff;
+    border: 1px solid #fff;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $osa-blue;
+      background-color: #fff;
+      border-color: $osa-blue;
+    }
+  }
+
+  &--blue {
+    background-color: $osa-blue;
+    color: #fff;
+    border-color: $osa-blue;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #fff;
+      color: $osa-blue;
+    }
+  }
+
+  &--ghost-blue {
+    background-color: transparent;
+    color: #3C55A5;
+    border: 1px solid #3C55A5;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #3C55A5;
+      color: #fff;
+    }
+  }
+
+  &--yellow {
+    background-color: $osa-yellow;
+    color: #fff;
+    border-color: $osa-yellow;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #fff;
+      color: $osa-blue;
+    }
+  }
+
+  &--form {
+    border-radius: 0;
+    min-width: 24rem;
+    margin: .8rem;
+    text-align: center;
+  }
+
+
+  &.button--arrow {
+    display: inline-flex;
+    align-items: center;
+    &:after {
+      @include material-icons-pseudo;
+      content: 'keyboard_arrow_right';
+      color: $osa-yellow;
+      font-size: 1.6rem;        
+    }
+
+    &.button--ghost-white {
+      &:after {
+        color: #fff;
+      }
+    }
+  }
+
+  &--white {
+    color: $osa-blue;
+    background-color: #fff;
+    border-color: #fff;
+  }
+
+  &--no-radius {
+    border-radius: 0;
+  }
+
+  &--full {
+    width: 100%;
+    text-align: left;
+    border-radius: 0;
+  }
+
+  &--orange-blue {
+    background-color: fff;
+    color: $moore-teal;
+    border-color: $moore-orange;
+    border-radius: 0;
+    border-width: 1px;
+  }
+}
