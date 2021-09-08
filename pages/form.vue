@@ -1508,7 +1508,7 @@
               <div>
                 <strong>Caption</strong>
               </div>
-              <div class="grey-subtitle">(some brief text to accompany the iamge - optional</div>
+              <div class="grey-subtitle">(some brief text to accompany the image - optional</div>
             </th>
           </tr>
         </thead>
