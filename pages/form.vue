@@ -1488,7 +1488,7 @@
       </div>
 
 <div class="table-wrapper">
-      <table class="form-table file-table">
+      <table id="tableRow" class="form-table file-table">
         <thead>
           <tr>
             <th scope="col"></th>
@@ -1518,6 +1518,7 @@
             <td data-label="Filename"><input type="text"></td>
             <td data-label="Image Title"><input type="text"></td>
             <td data-label="Caption"><input type="text"></td>
+            
           </tr>
 
           <tr>
@@ -1525,19 +1526,24 @@
             <td data-label="Filename"><input type="text"></td>
             <td data-label="Image Title"><input type="text"></td>
             <td data-label="Caption"><input type="text"></td>
+            
           </tr>
 
-          <tr>
-            <td scope="row" data-label="">D2</td>
-            <td data-label="Filename"><input type="text"></td>
-            <td data-label="Image Title"><input type="text"></td>
-            <td data-label="Caption"><input type="text"></td>
+          <tr v-for="(item) in tableRows" :key="item.id">
+            <td scope="row" data-label="">D{{item.id}}</td>
+            <td data-label="Filename"><input type="text" v-model="item.Filename"></td>
+            <td data-label="Image Title"><input type="text" v-model="item.ImageTitle"></td>
+            <td data-label="Caption"><input type="text" v-model="item.Caption"></td>
+            
           </tr>
         </tbody>
       </table>
 </div>
 
-
+<div class="addrow">
+  <a @click.stop="insert_Row" class="plus-icon">+</a>
+  
+</div>
         <div class="flex">
 
         <a href="/" class="button button--yellow button--form">Save </a>
@@ -1549,7 +1555,33 @@
 </template>
 
 <script>
-  export default {}
+  export default {
+  data() {
+    return {
+      
+    tableRows: [
+      {
+        "id": 3,
+        "Filename": "",
+        "ImageTitle": "",
+        "Caption": ""
+      }
+    ]
+    }
+  },
+  methods: {
+    insert_Row() {
+      this.tableRows.push(
+        {
+        "id": this.tableRows.length+3,
+        "Filename": "",
+        "ImageTitle": "",
+        "Caption": ""
+      }
+      )
+    }
+  }
+}
 
 </script>
 
@@ -1685,7 +1717,10 @@
     td,
     th {
       padding: .4rem;
+      
     }
+
+
 
     tr {
       @media(max-width: $breakpoint-max-1023) {
@@ -1717,7 +1752,32 @@
     }
 
   }
+    .addrow {
+        border: 0 none;
+   
+    margin: 0 0 3rem 0;
+   
+    text-align: left;
+    display: block;
+    width: 100%;
 
+        .plus-icon {
+          margin-left: .4rem;
+          border:1px solid cornflowerblue;
+          background-color: cornflowerblue;
+          color: #fff;
+          text-align: center;
+          padding: 0 .7rem;
+          box-sizing: border-box;
+          border-radius: 50%;
+          transition: all ease-in-out .4s;
+          &:hover, &:focus {
+            border:1px solid #182241;
+            background-color: #182241;
+      
+         }
+        }
+      }
   .group-headline {
     border-bottom: 1px solid #000;
     font-size: 2rem;
