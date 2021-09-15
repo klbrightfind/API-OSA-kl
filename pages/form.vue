@@ -1596,6 +1596,9 @@
     padding: 3.2rem 0;
   }
 
+.button.button--form {
+    margin: 0.8rem 1.4rem .8rem 1.4rem;
+    }
 
   .input-wrapper {
     display: flex;
@@ -1606,6 +1609,7 @@
     &--date {
       display: inline-flex;
     }
+
 
     .select-container {
       margin-bottom: 1.6rem;
@@ -1672,7 +1676,7 @@
       -moz-appearance: none;
       text-indent: 1px;
       text-overflow: '';
-      color: #777;
+      color: #1d1b1b;
       width: 100%;
       padding-left: .8rem;
       padding-right: 3.2rem;
@@ -1918,6 +1922,9 @@
   .total-row {
     input[type=text] {
       border: 0;
+    }
+    td, input {
+      font-weight: 700;
     }
   }
 
