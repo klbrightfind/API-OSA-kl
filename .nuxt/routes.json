@@ -21,6 +21,13 @@
     "_name": "_73761338"
   },
   {
+    "name": "modal",
+    "path": "/modal",
+    "component": "/Users/karimlounes/Brightfind-Projects/OSA-9-2021/API-OSA-kl/pages/modal.vue",
+    "chunkName": "pages/modal",
+    "_name": "_1a7076bd"
+  },
+  {
     "name": "resource",
     "path": "/resource",
     "component": "/Users/karimlounes/Brightfind-Projects/OSA-9-2021/API-OSA-kl/pages/resource.vue",

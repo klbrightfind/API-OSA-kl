@@ -1,7 +1,15 @@
 <template>
-  <div class="container">
+  <div class="container pt-7">
     <script defer="true" src="/tabletotal.js"></script>
-    <h2>[Reporting Year] SIF Information Collection</h2>
+    <div class="grid grid-cols-4 gap-4 pt-7">
+    <div class="col-span-3"><h2>[Reporting Year] SIF Information Collection</h2></div>
+    <div class="col-span-1 text-left flex flex-col">
+      <a href="mailto:something@email.com" target="_blank" class="">
+        <span><img class="w-20 mt-4" src="http://sc-osa.brightfind.com/library/OSA/img/EnvelopeIcon.svg">
+        </span><span class="text-for-icon">
+      contact us</span></a>
+      </div>
+    </div>
     <form class="form" action="#">
       <div class="input-wrapper--inline">
         <div class="input-wrapper">
@@ -55,7 +63,7 @@
         </thead>
         <tbody>
           <tr>
-            <td data-label="IOGP LSR Category	">Bypassing Safety Controls</td>
+            <td data-label="IOGP LSR Category	">Bypassing Safety Controls<span class="required-after">*</span></td>
             <td data-label="Actual">
               <div class="select-container">
                 <select name="numbers" id="numbers" required>
@@ -172,9 +180,8 @@
 
 
       <div class="input-wrapper">
-        <label for="">Other Information</label>
-        <div class="grey-subtitle">Please provide details for any SIF events not assigned to a life-saving rule
-          ("Other").</div>
+        <label for="">Other Section</label>
+        <div class="grey-subtitle">Please provide details for any SIF events not assigned to a life-saving rule ("Other").</div>
         <textarea name="" id="" cols="30" rows="10"></textarea>
       </div>
 
@@ -182,12 +189,12 @@
         <strong>
         <div class="pb-4">Additional Instructions:</div>
         <div class="pb-4">
-          <span class="span--red">For all actual SIFs reported above, please submit a Report Form 2 for each incident. </span>
+           <div class="grey-subtitle">For all actual SIFs reported above, please submit a SIF Incident Report for each incident. For the potential SIFs
+reported above, you may select up to 5 Potential SIF events with the most learning opportunity for the industry and provide additional detailed
+information for each incident by completing a SIR Incident Report for each incident.</div>
+      
         </div>
-        <div class="pb-4">  <span class="span--red"> For the potential SIFs reported above, you may select up to 5 Potential SIF events with the most learning opportunity for the industry</span> additional
-        provide additional detailed information for each incident by completing Report Form 2.
-
-        </div>
+        
         </strong>
       </div>
 
@@ -1357,7 +1364,6 @@
             <td data-label="Image Title"><input type="text"></td>
             <td data-label="Caption"><input type="text"></td>
           </tr>
-
           <tr>
             <td scope="row" data-label="">D2</td>
             <td data-label="Filename"><input type="text"></td>
@@ -1367,50 +1373,44 @@
         </tbody>
       </table>
       </div>
-
       <div class="flex">
-
         <a href="/" class="button button--yellow button--form">Save </a>
         <input type="submit" class="button button--yellow button--form">
       </div>
     </form>
-
     <h2>Report Form 5</h2>
     <form class="form" action="/">
       <div class="input-wrapper--inline">
         <div class="input-wrapper">
-          <label for="">Company</label>
+          <label for="" required>Company</label>
           <input placeholder="Placeholder" type="text" required>
         </div>
         <div class="input-wrapper">
-          <label for="">Name</label>
+          <label for="" required>Name</label>
           <input placeholder="Placeholder" type="text">
         </div>
       </div>
       <div class="input-wrapper--inline">
         <div class="input-wrapper">
-          <label for="">Email</label>
+          <label for="" required>Email</label>
           <input placeholder="Placeholder" type="text">
         </div>
-
         <div class="input-wrapper">
-          <label for="">Title</label>
+          <label for="" required>Title</label>
           <input placeholder="Placeholder" type="text">
         </div>
       </div>
-
       <div class="input-wrapper">
-        <label for="">Incident Date</label>
+        <label for="" required>Incident Date</label>
         <input type="date">
       </div>
-
       <div class="input-wrapper">
-        <label for="">Incident Location</label>
+        <label for="" required>Incident Location</label>
         <input placeholder='Location' type="text">
       </div>
 
       <div class="input-wrapper">
-        <label for="">State</label>
+        <label for="" required>State</label>
         <div class="select-container">
         <select name="cars" id="cars">
           <option value="">Michigan</option>
@@ -1423,34 +1423,34 @@
       </div>
 
       <div class="input-wrapper">
-        <label for="">Basin (Optional)</label>
+        <label for="" required>Basin (Optional)</label>
         <input placeholder='Location' type="text">
       </div>
 
       <div class="input-wrapper">
-        <label for="">County (Optional)</label>
+        <label for="" required>County (Optional)</label>
         <input placeholder='Location' type="text">
       </div>
 
       <div class="input-wrapper">
-        <label for="">What Happened? Please provide a summary/description of the event including information such as
+        <label for="" required>What Happened? Please provide a summary/description of the event including information such as
           stage of operation, weather conditions, etc.</label>
         <textarea name="" id="" cols="30" rows="10"></textarea>
       </div>
 
       <div class="input-wrapper">
-        <label for="">Why did it happen? What went wrong? Please provide a summary of the root causes and/or
+        <label for="" required>Why did it happen? What went wrong? Please provide a summary of the root causes and/or
           contributing factors to the event.</label>
         <textarea name="" id="" cols="30" rows="10"></textarea>
       </div>
 
       <div class="input-wrapper">
-        <label for="">What lessons can be learned from the incident?</label>
+        <label for="" required>What lessons can be learned from the incident?</label>
         <textarea name="" id="" cols="30" rows="10"></textarea>
       </div>
 
       <div class="input-wrapper">
-        <label for="">What Life Saving Action failed to prevent the event?</label>
+        <label for="" required>What Life Saving Action failed to prevent the event?</label>
         <div class="select-container">
           <select name="cars" id="cars">
             <option value="">Bypassing Safety Controls</option>
@@ -1486,7 +1486,11 @@
         </div>
 
       </div>
+<div class="input-wrapper">
+  <a href="/modal" class="add-link"><span class="plus-icon">+</span>Add a File</a>
+</div>
 
+<!--
 <div class="table-wrapper">
       <table id="tableRow" class="form-table file-table">
         <thead>
@@ -1544,7 +1548,7 @@
   <a @click.stop="insert_Row" class="plus-icon">+</a>
   
 </div>
-        <div class="flex">
+        --><div class="flex">
 
         <a href="/" class="button button--yellow button--form">Save </a>
         <input type="submit" name="submit" class="button button--yellow button--form">
@@ -1662,6 +1666,12 @@
 
     }
   }
+  .required-after {
+    color: red;
+    margin-left:.8rem;
+    position: relative;
+    font-size: 1.9rem;;
+  }
 
   .span--red {
     color:red;
@@ -1756,22 +1766,14 @@
     }
 
   }
-    .addrow {
-        border: 0 none;
-   
-    margin: 0 0 3rem 0;
-   
-    text-align: left;
-    display: block;
-    width: 100%;
-
-        .plus-icon {
+  .plus-icon {
           margin-left: .4rem;
           border:1px solid cornflowerblue;
           background-color: cornflowerblue;
           color: #fff;
           text-align: center;
           padding: 0 .7rem;
+          margin-right: 1rem;
           box-sizing: border-box;
           border-radius: 50%;
           transition: all ease-in-out .4s;
@@ -1781,6 +1783,16 @@
       
          }
         }
+    .addrow {
+        border: 0 none;
+   
+    margin: 0 0 3rem 0;
+   
+    text-align: left;
+    display: block;
+    width: 100%;
+
+        
       }
   .group-headline {
     border-bottom: 1px solid #000;
@@ -1942,4 +1954,8 @@
     width: 100%;
   }
 
+  .text-for-icon {
+    font-size:1.1rem;
+    color: #333;
+}
 </style>
