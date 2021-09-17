@@ -7,6 +7,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 import _3522283d from '../pages/account.vue'
 import _4242db72 from '../pages/additional.vue'
 import _73761338 from '../pages/form.vue'
+import _1a7076bd from '../pages/modal.vue'
 import _19cc34ae from '../pages/resource.vue'
 import _f2c9a11c from '../pages/safety.vue'
 import _62061b48 from '../pages/search.vue'
@@ -35,6 +36,10 @@ export const routerOptions = {
     path: "/form",
     component: _73761338,
     name: "form"
+  }, {
+    path: "/modal",
+    component: _1a7076bd,
+    name: "modal"
   }, {
     path: "/resource",
     component: _19cc34ae,
